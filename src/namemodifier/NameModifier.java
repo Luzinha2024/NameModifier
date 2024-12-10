@@ -50,7 +50,9 @@ import inpututilities.InputUtilities;
         // 2.2-  Reverse the name using String reverse and Builder and If and Else;
         String reversedName = new StringBuilder(name).reverse().toString();
         System.out.println("2. Name reversed: " + reversedName);
-        // Move the last letter to the front
+        
+        
+        // 2.3- Move the last letter to the front
         if (name.length() > 1) {
             String lastToFront = name.charAt(name.length() - 1) + name.substring(0, name.length() - 1);
             
@@ -61,7 +63,7 @@ import inpututilities.InputUtilities;
             System.out.println("3. Name is too short to modify with this method.");
               }
         
-        // 2.3 Extract initials using split and String Builder for print my initials, using "for" an "if" together
+        // 2.4 Extract initials using split and String Builder for print my initials, using "for" an "if" together
         String[] words = name.split(" ");
         
         StringBuilder initials = new StringBuilder();
@@ -80,13 +82,13 @@ import inpututilities.InputUtilities;
         
         
         
-        // 2.4-  Continuing the String now let's Replace all vowels with '👀';
+        // 2.5-  Continuing the String now let's Replace all vowels with '👀';
         String vowelsReplaced = name.replaceAll("[aeiouAEIOU]", " 👀 ");
         System.out.println("5. Name with vowels replaced: " + vowelsReplaced);
         
        
         
-        //2.5 Now going to give some good fun for the user's, mixed reversed name with prefix and suffix
+        //END.- Now going to give some good fun for the user's, mixed reversed name with prefix and suffix
        System.out.println ("\nNow some different appearance: ");
         // Add a custom prefix and suffix to make the transformation more unique using 
         String modifiedName = "☘ 🖤 ️" + reversedName + " ☘ 🖤";  
